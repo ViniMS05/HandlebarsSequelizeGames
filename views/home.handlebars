@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="./style/home.css" />
+
+<h1>Seus jogos: </h1>
+
+{{#each games}}
+  <div class="game_card">
+    <h2>Título: {{title}}</h2>
+    <p>Genêro: {{genre}}</p>
+    <p>Ano: {{year}}</p>
+
+    <div class="button_box">
+      <a class="button_update" href="/games/update/{{id}}">
+        <button>
+          <p>Atualizar</p>
+        </button>
+      </a>
+      <a class="button_delete" href="/games/delete/{{id}}">
+        <button>
+          <p>Deletar</p>
+        </button>
+      </a>
+    </div>
+  </div>
+
+{{/each}}

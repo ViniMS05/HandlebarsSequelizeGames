@@ -1,0 +1,45 @@
+.game_card {
+    margin-top: 2rem;
+    padding: 1rem 1.125rem;
+
+    background: var(--bg);
+
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.game_card .button_box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.game_card .button_box a {
+    flex: 1;
+    border-radius: 8px;
+}
+
+.game_card .button_box button {
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.button_update {
+    background-color: green;
+}
+
+.button_delete {
+    background-color: red;
+}
+
+.game_card .button_box button:hover {
+    filter: brightness(120%);
+}
